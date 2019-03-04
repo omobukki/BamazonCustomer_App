@@ -84,7 +84,7 @@ var productDetails = function () {
       return;
     }
     else if(filter[0].stock_quantity >= amount){
-      ///update the database
+      //update the database
       var newquantity = filter[0].stock_quantity - quantity;
          connection.query(
             "UPDATE PRODUCT SET stock_quantity =" +
